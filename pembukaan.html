@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KKN SISDAMAS 207 | Cicalengka Wetan</title>
-    <link rel="stylesheet" href="style1.css">
-    <!-- Fontawesome Link for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-  </head>
-  <body>
+    <title>Gridy Blog</title>
+
+    <!-- font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <!-- swiper slider css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css" integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA==" crossorigin="anonymous" />
+
+    <!-- custom style.css file -->
+    <link rel="stylesheet" href="styleblog.css">
+
+</head>
+<body>
+    
+    <!-- Header -->
     <header>
       <nav class="navbar">
-        <h2 class="logo"><a href="#">LOGO</a></h2>
+        <img src="images/logo.png" class="logo" alt="logo">
         <input type="checkbox" id="menu-toggler">
         <label for="menu-toggler" id="hamburger-btn">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
@@ -20,7 +29,7 @@
           </svg>
         </label>
         <ul class="all-links">
-          <li><a href="#home">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#about">About Us</a></li>
@@ -28,159 +37,180 @@
         </ul>
       </nav>
     </header>
+    <!-- .Header -->
 
-    <section class="about container" id="about">
-        <div class="contentBx">
-            <h2 class="titleText">Catch up with the trending topics</h2>
-            <p class="title-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos consequuntur voluptate dolorum totam provident ducimus cupiditate dolore doloribus repellat. Saepe ad fugit similique quis quam. Odio suscipit incidunt distinctio.
-                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed blanditiis libero pariatur ipsum suscipit voluptates aut, repellendus quos dolor autem, natus laboriosam consectetur maxime cumque, sunt magni optio? Veritatis, ea?
-            </p>
-            <a href="#" class="btn2">Read more</a>
-        </div>
-        <div class="imgBx">
-            <img src="images/about.png" alt="" class="fitBg">
-        </div>
-    </section>
+        <!-- Post Content -->
+        <section class="container">
+            <article id="post">
+                <!-- article heading -->
+                <div class="headings text-center">
+                    <div class="category">
+                        <a href="#" class="nav-link">KKN SISDAMAS 2024</a>
+                    </div>
 
-    <div class="post-filter container">
-        <span class="filter-item active-filter" data-filter="all">All</span>
-        <span class="filter-item" data-filter="tech">Tech</span>
-        <span class="filter-item" data-filter="food">Food</span>
-        <span class="filter-item" data-filter="news">News</span>
-    </div>
-    
-    <div class="post container">
-        <!-- Post 1 -->
-        <div class="post-box tech">
-            <img src="images/img1.jpg" alt="" class="post-img">
-            <h2 class="category">Tech</h2>
-            <a href="#" class="post-title">How to create the best UI with Figma</a>
-            <span class="post-date">12 Feb 2022</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
-            <div class="profile">
-                <img src="images/testi1.jpg" alt="" class="profile-img">
-                <span class="profile-name">MKHB</span>
-            </div>
-        </div>
-        <!-- Post 2 -->
-        <div class="post-box food">
-            <img src="images/img2.jpg" alt="" class="post-img">
-            <h2 class="category">Tech</h2>
-            <a href="#" class="post-title">How to create the best UI with Figma</a>
-            <span class="post-date">12 Feb 2022</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
-            <div class="profile">
-                <img src="images/testi1.jpg" alt="" class="profile-img">
-                <span class="profile-name">MKHB</span>
-            </div>
-        </div>
-        <!-- Post 3 -->
-        <div class="post-box food">
-            <img src="images/img3.jpg" alt="" class="post-img">
-            <h2 class="category">Food</h2>
-            <a href="#" class="post-title">How to create the best UI with Figma</a>
-            <span class="post-date">12 Feb 2022</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
-            <div class="profile">
-                <img src="images/testi1.jpg" alt="" class="profile-img">
-                <span class="profile-name">MKHB</span>
-            </div>
-        </div>
-        <!-- Post 4 -->
-        <div class="post-box news">
-            <img src="images/img4.jpg" alt="" class="post-img">
-            <h2 class="category">Tech</h2>
-            <a href="#" class="post-title">How to create the best UI with Figma</a>
-            <span class="post-date">12 Feb 2022</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
-            <div class="profile">
-                <img src="images/testi1.jpg" alt="" class="profile-img">
-                <span class="profile-name">MKHB</span>
-            </div>
-        </div>
-        <!-- Post 5 -->
-        <div class="post-box tech">
-            <img src="images/img5.jpg" alt="" class="post-img">
-            <h2 class="category">Tech</h2>
-            <a href="#" class="post-title">How to create the best UI with Figma</a>
-            <span class="post-date">12 Feb 2022</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
-            <div class="profile">
-                <img src="images/testi1.jpg" alt="" class="profile-img">
-                <span class="profile-name">MKHB</span>
-            </div>
-        </div>
-        <!-- Post 6 -->
-        <div class="post-box news">
-            <img src="images/img4.jpg" alt="" class="post-img">
-            <h2 class="category">News</h2>
-            <a href="#" class="post-title">How to create the best UI with Figma</a>
-            <span class="post-date">12 Feb 2022</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
-            <div class="profile">
-                <img src="images/testi1.jpg" alt="" class="profile-img">
-                <span class="profile-name">MKHB</span>
-            </div>
-        </div>
-        <!-- Post 7 -->
-        <div class="post-box tech">
-            <img src="images/img7.jpg" alt="" class="post-img">
-            <h2 class="category">Tech</h2>
-            <a href="#" class="post-title">How to create the best UI with Figma</a>
-            <span class="post-date">12 Feb 2022</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
-            <div class="profile">
-                <img src="images/testi1.jpg" alt="" class="profile-img">
-                <span class="profile-name">MKHB</span>
-            </div>
-        </div>
-        <!-- Post 1 -->
-        <div class="post-box news">
-            <img src="images/img8.jpg" alt="" class="post-img">
-            <h2 class="category">News</h2>
-            <a href="#" class="post-title">How to create the best UI with Figma</a>
-            <span class="post-date">12 Feb 2022</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
-            <div class="profile">
-                <img src="images/testi1.jpg" alt="" class="profile-img">
-                <span class="profile-name">MKHB</span>
-            </div>
-        </div>
-        <!-- Post 9 -->
-        <div class="post-box food">
-            <img src="images/img10.jpg" alt="" class="post-img">
-            <h2 class="category">Food</h2>
-            <a href="#" class="post-title">How to create the best UI with Figma</a>
-            <span class="post-date">12 Feb 2022</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
-            <div class="profile">
-                <img src="images/testi1.jpg" alt="" class="profile-img">
-                <span class="profile-name">MKHB</span>
-            </div>
-        </div>
-    </div>
+                    <div class="title">
+                        <h2 class="text-title text-dark display-1">Pembukaan KKN SISDAMAS 2024 Kelompok 207 Desa Cicalengka Wetan</h2>
+                    </div>
 
+                    <div class="meta">
+                        <a href="#" class="link display-2 text-secondary px-1">
+                            <i class="fas fa-user text-primary"></i> Nada Fadhiilah Balqis
+                        </a>
+                        <a href="#" class="link display-2 text-secondary px-1">
+                            <i class="fas fa-clock text-primary"></i>  29 Juli 2024
+                        </a>
+                    </div>
+                </div>
+
+                <!-- thumbnail  -->
+                <div class="thumbnail mt-3">
+                    <img src="./images/cover-day1.jpg" class="thumbnail" alt="">
+                </div>
+
+                <!-- content -->
+                <div class="content text-dark display-2 secondary-title mt-3">
+                    <p>Pada tanggal 29 Juli 2024, dengan penuh semangat dan antusiasme, 
+                      kami memulai kegiatan Kuliah Kerja Nyata (KKN) SISDAMAS di Desa Cicalengka Wetan, 
+                      Kabupaten Bandung. Acara pembukaan ini menjadi momentum penting untuk memulai 
+                      kerjasama antara mahasiswa, dosen, dan masyarakat setempat dalam rangka pemberdayaan 
+                      masyarakat melalui berbagai program yang telah direncanakan. Acara pembukaan ini dihadiri 
+                      oleh berbagai pihak, termasuk aparat desa, tokoh masyarakat, dan para peserta KKN.
+                    </p>
+                    <h3>Pembukaan oleh Perwakilan Ketiga KKN</h3>
+                    <p>Acara dimulai dengan pemaparan dari ketua peserta KKN kelompok 207. Dalam sambutannya, 
+                      beliau menyampaikan permohonan izin dan dukungan dari masyarakat dan aparat desa untuk 
+                      melaksanakan kegiatan KKN di desa ini. Pemaparan ini bertujuan untuk mendapatkan persetujuan 
+                      dan memastikan kerjasama yang baik antara mahasiswa KKN dan warga setempat. Ketua kelompok 
+                      juga menjelaskan rencana kegiatan yang akan dilakukan selama KKN, yang mencakup berbagai aspek 
+                      pemberdayaan masyarakat.Pemaparan ini bertujuan untuk memastikan kesepakatan dan kerjasama yang 
+                      baik antara mahasiswa KKN dan masyarakat setempat.
+                    </p>
+                  </br>
+                    <img src="./images/dosen.jpg" class="right" alt="">
+                    <h3>Pembukaan oleh dan Penjelasan oleh Dosen Pembimbing</h3>
+                    <p>Selanjutnya, dosen pembimbing KKN memberikan penjelasan mendalam mengenai SISDAMAS 
+                      (Berbasis Pemberdayaan Masyarakat). SISDAMAS adalah sebuah program yang bertujuan 
+                      untuk memberdayakan masyarakat melalui pendekatan berbasis teknologi dan kolaborasi. 
+                      Dosen juga memperkenalkan diri dan memberikan gambaran mengenai latar belakang akademis 
+                      dan profesionalnya. Penjelasan ini bertujuan untuk memberikan pemahaman yang jelas 
+                      tentang tujuan dan manfaat dari program KKN ini, serta peran dosen dalam mendampingi dan 
+                      membimbing mahasiswa selama kegiatan berlangsung.
+                    </p>
+                  </br>
+                    <img src="./images/kades.jpg" class="left" alt="">
+                    <h3>Sambutan Kepala Desa</h3>
+                    <p>Kepala Desa Cicalengka Wetan kemudian memberikan sambutan yang penuh makna dan harapan. 
+                      Dalam sambutannya, beliau mengungkapkan betapa pentingnya kolaborasi antara mahasiswa dan 
+                      masyarakat untuk mencapai tujuan bersama dalam program KKN ini. Kepala Desa menekankan pentingnya 
+                      keterlibatan aktif dari semua pihak agar kegiatan ini dapat memberikan dampak yang positif dan 
+                      berkelanjutan bagi masyarakat desa. Beliau juga menyampaikan ucapan terima kasih atas kehadiran 
+                      dan partisipasi semua pihak yang terlibat dalam kegiatan ini.
+                    </p>
+                  </br>
+                    <h3>Pemotongan Tumpeng dan Pemberian ID Card</h3>
+                    <p>Sebagai simbol dimulainya KKN dan bentuk syukur atas kesempatan yang diberikan, dilakukan 
+                      pemotongan tumpeng. Tumpeng, yang merupakan simbol keberkahan dan rasa syukur, dipotong dan 
+                      dibagikan kepada semua peserta dan tamu undangan. Selain itu, sebagai tanda resmi bahwa kegiatan 
+                      KKN telah dibuka, dilakukan pula pemberian ID card secara simbolis kepada masing-masing peserta 
+                      KKN. ID card ini tidak hanya berfungsi sebagai identitas resmi peserta, tetapi juga sebagai simbol 
+                      komitmen dan tanggung jawab dalam menjalankan program-program yang telah direncanakan.</p>
+                    <!-- Gallery Section -->
+                      <div class="gallery-container">
+                          <div class="gallery-item">
+                              <img src="images/image1.jpg" alt="Gallery Image 1">
+                          </div>
+                          <div class="gallery-item">
+                              <img src="images/image2.jpg" alt="Gallery Image 2">
+                          </div>
+                          <div class="gallery-item">
+                              <img src="images/image3.jpg" alt="Gallery Image 3">
+                          </div>
+                          <div class="gallery-item">
+                              <img src="images/gallery4.jpg" alt="Gallery Image 4">
+                          </div>
+                          <!-- Add more images as needed -->
+                      </div>
+                    <p>Kami mengundang seluruh masyarakat Cicalengka Wetan untuk berpartisipasi aktif dalam setiap 
+                      kegiatan yang kami adakan. Dengan kebersamaan dan sinergi antara mahasiswa, dosen, dan masyarakat, 
+                      kita dapat mewujudkan perubahan positif dan meningkatkan kualitas hidup di desa kita tercinta. Mari 
+                      bersama-sama sukseskan KKN SISDAMAS ini, dan wujudkan masa depan yang lebih baik untuk Cicalengka Wetan!</p>
+                </div>
+            </article>
+                <!-- post related -->
+                <div class="post-realted py-2">
+                    <div class="row justify-content-center">
+                        <div class="prev">
+                            <div class="py-2">
+                                <a href="#" class="display-2 text-dark">
+                                    <i class="fas fa-chevron-left"></i> 
+                                    Previous Post
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="next text-left">
+                            <div class="py-2">
+                                <a href="#" class="display-2 text-dark">
+                                    Next Post
+                                    <i class="fas fa-chevron-right"></i> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- .Main Site -->
+
+    <!-- Footer -->
     <section class="about" id="about">
       <h2>About Us</h2>
       <p>Discover our story in providing camping services.</p>
       <div class="row company-info">
         <h3>Our Story</h3>
-        <p>Experience the excellence of our camping gear and services, where we have been offering high-quality camping essentials and gear for outdoor enthusiasts for over a decade. Our commitment to quality and customer satisfaction ensures that every adventurer can rely on us for their camping needs.</p>
+        <p>Kelompok 207 KKN SISDAMAS di Desa Cicalengka Wetan, Kabupaten Bandung, 
+          merupakan bagian dari program Kuliah Kerja Nyata yang bertujuan untuk memberikan 
+          pengalaman nyata dalam pemberdayaan masyarakat kepada mahasiswa. Dimulai pada tanggal 
+          29 Juli 2024, kegiatan ini melibatkan mahasiswa dari berbagai jurusan yang bekerja sama 
+          dengan masyarakat setempat untuk menciptakan solusi inovatif dan berkelanjutan. Kami datang 
+          dengan semangat belajar dan berbagi, membawa pengetahuan dan keterampilan yang kami dapatkan 
+          di bangku kuliah untuk diaplikasikan dalam kehidupan nyata. Melalui interaksi dan kolaborasi 
+          dengan warga desa, kami berharap dapat memberikan kontribusi positif yang dapat dirasakan langsung 
+          oleh masyarakat.</p>
       </div>
       <div class="row mission-vision">
         <h3>Our Mission</h3>
-        <p>At Camping Gear Experts, our mission is to equip outdoor enthusiasts with top-notch camping gear and essentials that enhance their outdoor experiences. We strive to provide reliable, durable, and innovative products that contribute to memorable adventures and lasting memories.</p>
+        <p>Misi kami adalah untuk memberdayakan masyarakat Desa Cicalengka Wetan melalui pendekatan yang kolaboratif dan berkelanjutan. Kami berkomitmen untuk:</p>
+        <li>Mengidentifikasi kebutuhan dan potensi masyarakat setempat.</li>
+        <li>Mengembangkan program-program yang relevan dan bermanfaat bagi masyarakat.</li>
+        <li>Meningkatkan kapasitas dan keterampilan masyarakat melalui pelatihan dan pendampingan.</li>
+        <li>Membangun hubungan yang kuat dan saling menguntungkan antara mahasiswa dan masyarakat.</li>
+        <li>Mendorong partisipasi aktif masyarakat dalam setiap kegiatan yang kami laksanakan.</li>
         <h3>Our Vision</h3>
-        <p>Our vision is to become the go-to destination for camping enthusiasts, known for our extensive selection of premium camping gear and exceptional customer service. We aspire to inspire and enable people to embrace the beauty of nature and create unforgettable camping experiences.</p>
+        <p>Visi kami adalah menciptakan Desa Cicalengka Wetan yang mandiri, berdaya saing, dan berkelanjutan. 
+          Kami percaya bahwa dengan memberdayakan masyarakat melalui pendidikan, pelatihan, dan kolaborasi, 
+          desa ini dapat berkembang menjadi komunitas yang sejahtera dan mampu menghadapi tantangan masa depan. 
+          Kami berusaha untuk menjadi agen perubahan yang menginspirasi dan memotivasi masyarakat untuk terus belajar, 
+          berkembang, dan berinovasi. Dengan demikian, kami berharap dapat meninggalkan warisan yang berkelanjutan dan 
+          positif bagi Desa Cicalengka Wetan.</p>
       </div>
       <div class="row team">
         <h3>Our Team</h3>
         <ul>
-          <li>John Doe - Founder and CEO</li>
-          <li>Jane Smith - Gear Specialist</li>
-          <li>Mark Johnson - Customer Representative</li>
-          <li>Sarah Brown - Operations Manager</li>
+          <li>Eka Astria Rustiani - Pendidikan Fisika</li>
+          <li>Zaky Qolby - Pendidikan Kimia</li>
+          <li>Annisa Nurul Fajri - Hukum Tata Negara</li>
+          <li>Fahmi Prayoga - Hukum Pidana Islam</li>
+          <li>Silmi Kamalia - Bimbingan KOnseling Islam</li>
+          <li>Ananda Syafira - Ilmu Komunikasi Jurnalistik</li>
+          <li>Bagas Prawiro Djati - Ilmu Komunikasi Humas</li>
+          <li>Muhammad Fahmi Alamsyah - Biologi</li>
+          <li>Nada Fadhiilah Balqis - Teknik Informatika</li>
+          <li>Sasya Amanda Putri - Administrasi Publik</li>
+          <li>Siti Nuraliza - Administrasi Publik</li>
+          <li>Annisa Nurkholifah Gusliani - Ilmu Politik</li>
+          <li>Azzura Seba Puncuna - Akuntansi Syariah</li>
         </ul>
       </div>
     </section>
@@ -194,9 +224,6 @@
             <p><i class="fas fa-map-marker-alt"></i> 123 Campsite Avenue, Wilderness, CA 98765</p>
             <p><i class="fas fa-envelope"></i> info@campinggearexperts.com</p>
             <p><i class="fas fa-phone"></i> (123) 456-7890</p>
-            <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 5:00 PM</p>
-            <p><i class="fas fa-clock"></i> Saturday: 10:00 AM - 3:00 PM</p>
-            <p><i class="fas fa-clock"></i> Sunday: Closed</p>
             <p><i class="fas fa-globe"></i> www.codingenpalweb.com</p>
           </div>          
         </div>
@@ -212,17 +239,7 @@
     </section>
 
     <footer>
-      <div>
-        <span>Copyright © 2023 All Rights Reserved</span>
-        <span class="link">
-            <a href="#">Home</a>
-            <a href="#contact">Contact</a>
-        </span>
-      </div>
+      <p>&copy; 2024 KKN SISDAMAS Kelompok 207. All rights reserved.</p>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="main.js"></script>
-
-  </body>
+</body>
 </html>
