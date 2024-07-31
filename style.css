@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background: #f2f2f2;
+  background: #fef8e7;
 }
 
 header {
@@ -23,7 +23,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  background: #333;
+  background: #33251a;
 }
 
 .navbar {
@@ -54,10 +54,8 @@ header {
   list-style: none;
 }
 
-.navbar .logo a {
-  display: flex;
-  align-items: center;
-  margin-left: 0;
+.navbar .logo {
+  max-height: 50px;
 }
 
 header a, footer a {
@@ -70,16 +68,17 @@ header a, footer a {
 }
 
 header a:hover, footer a:hover {
-  color: #ddd;
+  color: #d7b979;
 }
 
 .homepage {
   height: 100vh;
   width: 100%;
   position: relative;
-  background: url("images/home-bg.jpg");
-  background-position: center 65%;
-  background-size: cover;
+  display: flex;
+  background: url('images/cover1.jpg') no-repeat center center/cover;
+  align-items: center;
+  justify-content: center;
 }
 
 .homepage::before {
@@ -89,50 +88,47 @@ header a:hover, footer a:hover {
   top: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .homepage .content {
-  display: flex;
-  height: 85%;
-  z-index: 3;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
 }
 
 .homepage .content h1 {
-  font-size: 60px;
+  font-size: 4rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .homepage .content .text {
-  margin-bottom: 50px;
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.content a {
-  color: #000;
-  display: block;
+.homepage .content a {
+  color: #fff;
+  display: inline-block;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 1rem;
   margin: 0 10px;
-  padding: 10px 30px;
+  padding: 12px 30px;
   border-radius: 5px;
-  background: #fff;
-  border: 2px solid #fff;
-  transition: 0.4s ease;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background: #d7b979;
+  border: 2px solid #d7b979;
+  transition: background 0.4s ease, color 0.4s ease;
   text-decoration: none;
 }
 
-.content a:hover {
-  color: #fff;
-  background: rgba(255,255,255,0.3);
+.homepage .content a:hover {
+  color: #d7b979;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 section {
@@ -182,7 +178,7 @@ section.about {
 }
 
 section .cards .card {
-  background: #fff;
+  background: #f3ebd8;
   padding: 40px 15px;
   list-style: none;
   border-radius: 5px;
@@ -212,9 +208,15 @@ section .cards .card {
   border-radius: 7px;
 }
 
-.cards .card p {
-  padding: 0 15px;
-  margin-top: 5px;
+.cards .card a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cards .card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .about .row {
@@ -284,7 +286,7 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  background: #000;
+  background: #33251a;
   padding: 20px 0;
 }
 
@@ -304,6 +306,10 @@ footer a {
   padding: 0;
 }
 
+footer p {
+  color: #fff;
+}
+
 @media screen and (max-width: 860px) {
   .navbar .all-links {
     position: fixed;
@@ -316,12 +322,14 @@ footer a {
     transition: left 0.3s ease;
   }
 
-  .navbar #menu-toggler:checked~.all-links {
+  .navbar #menu-toggler:checked ~ .all-links {
     left: 0;
   }
 
   .navbar .all-links li {
     font-size: 18px;
+    padding: 15px 20px; /* Menambahkan padding vertikal dan horizontal untuk item menu */
+    border-bottom: 1px solid #444; /* Garis pemisah antar item menu */
   }
 
   .navbar #hamburger-btn {
@@ -333,45 +341,6 @@ footer a {
   }
 
   section .cards .card {
-    width: calc(100% / 2 - 15px);
-    margin-bottom: 30px;
-  }
-
-  .homepage .content h1 {
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-
-  .homepage .content .text {
-    font-size: 17px;
-  }
-
-  .content a {
-    font-size: 17px;
-    padding: 9px 20px;
-  }
-
-  .contact .row {
-    flex-direction: column;
-  }
-
-  .contact .row .col {
-    width: 100%;
-  }
-
-  .contact .row .col:last-child {
-    margin-top: 40px;
-  }
-
-  footer a {
-    height: 0;
-  }
-}
-
-@media screen and (max-width: 560px) {
-  section .cards .card {
-    width: 100%;
-    margin-bottom: 30px;
+    width: calc(100% / 2 - 30px); /* Menutup properti CSS yang terpotong */
   }
 }
